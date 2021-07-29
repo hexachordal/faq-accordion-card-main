@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+//primary text
+$d-blue: hsl(238, 29%, 16%)
+$s-red: hsl(14, 88%, 65%)
+//background gradient
+$s-vio: hsl(273, 75%, 66%)
+$s-blue: hsl(240, 73%, 65%)
+//neutral text
+$vdg-blue: hsl(237, 12%, 33%)
+$dg-blue: hsl(240, 6%, 50%)
+//hover color
+$hov-color: #F47B56
+//dividers
+$lg-blue: hsl(240, 5%, 91%)
+//font size body
+$f-size: 12px
+//font weights
+$b-font: 700
+$s-font: 400
+//font family
+$f-family: 'Kumbh Sans', sans-serif
+
+
+*
+    margin: 0
+    border: 0
+    padding: 0
+    box-sizing: border-box
+
+    body
+        width: 100%
+        height: 100vh
+        background: linear-gradient(180deg, $s-vio, $s-blue) no-repeat
+
+        main
+            background: white
+            font-family: $f-family
+            
+            header
+                color: black
+                font-weight: $b-font
+            
+            .question
+                color: black
+                font-weight: $s-font
+                
+                &:hover
+                    color: $hov-color
+                    cursor: pointer
+
+                &:visited
+                    color: $hov-color
+                    .accordion
+                        display: block
+
+                .accordion
+                    display: none
+                    color: black
+                
+                    
+
+        .attribution
+            font-size: 11px
+            text-align: center
+            color: white
+            
+            a
+                color: hsl(228, 45%, 44%)
