@@ -34,17 +34,50 @@
   cursor: pointer;
 }
 
-* body main .question:visited {
-  color: #F47B56;
-}
-
-* body main .question:visited .accordion {
-  display: block;
-}
-
 * body main .question .accordion {
-  display: none;
   color: black;
+  overflow: hidden;
+  height: 0em;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    height: 0em;
+  }
+  100% {
+    height: 1em;
+  }
+}
+
+@keyframes appear {
+  0% {
+    height: 0em;
+  }
+  100% {
+    height: 1em;
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    height: 1em;
+  }
+  100% {
+    height: 0em;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    height: 1em;
+  }
+  100% {
+    height: 0em;
+  }
 }
 
 * body .attribution {
