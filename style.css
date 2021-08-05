@@ -38,8 +38,8 @@
   color: black;
   overflow: hidden;
   height: 0em;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
