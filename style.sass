@@ -36,13 +36,23 @@ $f-family: 'Kumbh Sans', sans-serif
 
         main
             display: grid
+            grid-template-rows: 4rem 4rem auto
             background: white
             font-family: $f-family
+            place-items: center
             width: 90vw
-            height: 80vh
+            height: 70vh
             border-radius: 20px
             box-shadow: 0px 5px 20px 0px black
             padding: 5%
+
+            #woman
+                position: relative
+                top: -4rem
+                right: 1rem
+            #bkg
+                position: relative
+                top: -4rem
 
             header
                 color: black
@@ -52,7 +62,9 @@ $f-family: 'Kumbh Sans', sans-serif
 
             .question
                 color: black
+                font-size: 4vw
                 font-weight: $s-font
+                border-bottom: 1px solid lightgray
 
                 svg
                     animation-duration: 1.5s
