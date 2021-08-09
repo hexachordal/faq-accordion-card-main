@@ -1,188 +1,511 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* body {
-  width: 100%;
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
-  background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
-}
-
-* body main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 4rem 4rem auto;
-      grid-template-rows: 4rem 4rem auto;
-  background: white;
-  font-family: "Kumbh Sans", sans-serif;
-  place-items: center;
-  width: 90vw;
-  height: 70vh;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 5px 20px 0px black;
-          box-shadow: 0px 5px 20px 0px black;
-  padding: 5%;
-}
-
-* body main #woman {
-  position: relative;
-  top: -7vh;
-  right: 1rem;
-}
-
-* body main #bkg {
-  position: relative;
-  top: -8vh;
-}
-
-* body main header {
-  position: relative;
-  top: -4vh;
-  color: black;
-  font-weight: 700;
-  font-size: 2em;
-  text-align: center;
-}
-
-* body main .question {
-  color: black;
-  width: 95%;
-  font-size: 1.5vh;
-  text-align: left;
-  font-weight: 400;
-  border-bottom: 1px solid lightgray;
-}
-
-* body main .question svg {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes arrDown {
-  0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+@media screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  100% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+  * body {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+    background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
   }
-}
-
-@keyframes arrDown {
-  0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  * body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 4rem 4rem auto;
+        grid-template-rows: 4rem 4rem auto;
+    background: white;
+    font-family: "Kumbh Sans", sans-serif;
+    place-items: center;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 20px 0px black;
+            box-shadow: 0px 5px 20px 0px black;
+    padding: 5%;
   }
-  100% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+  * body main #woman {
+    position: relative;
+    top: -7vh;
+    right: 1rem;
   }
-}
-
-@-webkit-keyframes arrUp {
-  0% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+  * body main #bkg {
+    position: relative;
+    top: -8vh;
   }
-  100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  * body main header {
+    position: relative;
+    top: -4vh;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
   }
-}
-
-@keyframes arrUp {
-  0% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+  * body main .question {
+    color: black;
+    width: 95%;
+    font-size: 1.5vh;
+    text-align: left;
+    font-weight: 400;
+    border-bottom: 1px solid lightgray;
   }
-  100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  * body main .question svg {
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
-}
-
-* body main .question:hover {
-  color: #F47B56;
-  cursor: pointer;
-}
-
-* body main .question .accordion {
-  color: black;
-  overflow: hidden;
-  margin-top: 0.5em;
-  line-height: 2em;
-  font-size: 1.2vh;
-  height: 0em;
-  font-weight: 400;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes appear {
-  0% {
+  @-webkit-keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @-webkit-keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  @keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  * body main .question:hover {
+    color: #F47B56;
+    cursor: pointer;
+  }
+  * body main .question .accordion {
+    color: black;
+    overflow: hidden;
+    margin-top: 0.5em;
+    line-height: 2em;
+    font-size: 1.2vh;
     height: 0em;
+    font-weight: 400;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
-  100% {
-    height: 4em;
+  @-webkit-keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
+  }
+  @keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
+  }
+  @-webkit-keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  * body .attribution {
+    position: absolute;
+    font-size: 11px;
+    bottom: 5px;
+    left: 5vw;
+    text-align: center;
+    color: white;
+    width: 90vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  * body .attribution a {
+    color: #F47B56;
   }
 }
 
-@keyframes appear {
-  0% {
+@media screen and (max-width: 1139px) {
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  * body {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+    background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
+  }
+  * body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 4rem 4rem auto;
+        grid-template-rows: 4rem 4rem auto;
+    background: white;
+    font-family: "Kumbh Sans", sans-serif;
+    place-items: center;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 20px 0px black;
+            box-shadow: 0px 5px 20px 0px black;
+    padding: 5%;
+  }
+  * body main #woman {
+    position: relative;
+    top: -7vh;
+    right: 1rem;
+  }
+  * body main #bkg {
+    position: relative;
+    top: -8vh;
+  }
+  * body main header {
+    position: relative;
+    top: -4vh;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+  }
+  * body main .question {
+    color: black;
+    width: 95%;
+    font-size: 1.5vh;
+    text-align: left;
+    font-weight: 400;
+    border-bottom: 1px solid lightgray;
+  }
+  * body main .question svg {
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @-webkit-keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  @keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  * body main .question:hover {
+    color: #F47B56;
+    cursor: pointer;
+  }
+  * body main .question .accordion {
+    color: black;
+    overflow: hidden;
+    margin-top: 0.5em;
+    line-height: 2em;
+    font-size: 1.2vh;
     height: 0em;
+    font-weight: 400;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
-  100% {
-    height: 4em;
+  @-webkit-keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
+  }
+  @keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
+  }
+  @-webkit-keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  * body .attribution {
+    position: absolute;
+    font-size: 11px;
+    bottom: 5px;
+    left: 5vw;
+    text-align: center;
+    color: white;
+    width: 90vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  * body .attribution a {
+    color: #F47B56;
   }
 }
 
-@-webkit-keyframes disappear {
-  0% {
-    height: 4em;
+@media screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  100% {
+  * body {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+    background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
+  }
+  * body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 4rem 4rem auto;
+        grid-template-rows: 4rem 4rem auto;
+    background: white;
+    font-family: "Kumbh Sans", sans-serif;
+    place-items: center;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 20px 0px black;
+            box-shadow: 0px 5px 20px 0px black;
+    padding: 5%;
+  }
+  * body main #woman {
+    position: relative;
+    top: -7vh;
+    right: 1rem;
+  }
+  * body main #bkg {
+    position: relative;
+    top: -8vh;
+  }
+  * body main header {
+    position: relative;
+    top: -4vh;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+  }
+  * body main .question {
+    color: black;
+    width: 95%;
+    font-size: 1.5vh;
+    text-align: left;
+    font-weight: 400;
+    border-bottom: 1px solid lightgray;
+  }
+  * body main .question svg {
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @keyframes arrDown {
+    0% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+  }
+  @-webkit-keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  @keyframes arrUp {
+    0% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  * body main .question:hover {
+    color: #F47B56;
+    cursor: pointer;
+  }
+  * body main .question .accordion {
+    color: black;
+    overflow: hidden;
+    margin-top: 0.5em;
+    line-height: 2em;
+    font-size: 1.2vh;
     height: 0em;
+    font-weight: 400;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
-}
-
-@keyframes disappear {
-  0% {
-    height: 4em;
+  @-webkit-keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
   }
-  100% {
-    height: 0em;
+  @keyframes appear {
+    0% {
+      height: 0em;
+    }
+    100% {
+      height: 4em;
+    }
   }
-}
-
-* body .attribution {
-  position: absolute;
-  font-size: 11px;
-  bottom: 5px;
-  left: 5vw;
-  text-align: center;
-  color: white;
-  width: 90vw;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-* body .attribution a {
-  color: #F47B56;
+  @-webkit-keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      height: 4em;
+    }
+    100% {
+      height: 0em;
+    }
+  }
+  * body .attribution {
+    position: absolute;
+    font-size: 11px;
+    bottom: 5px;
+    left: 5vw;
+    text-align: center;
+    color: white;
+    width: 90vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  * body .attribution a {
+    color: #F47B56;
+  }
 }
 /*# sourceMappingURL=style.css.map */
