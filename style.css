@@ -16,6 +16,9 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
     background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
   }
+  * body #box {
+    display: none;
+  }
   * body main {
     display: -ms-grid;
     display: grid;
@@ -187,6 +190,9 @@
     place-items: center;
     background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
     background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
+  }
+  * body #box {
+    display: none;
   }
   * body main {
     display: -ms-grid;
@@ -360,6 +366,16 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
     background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
   }
+  * body #box {
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 12vw;
+    left: 10vw;
+    top: 45vh;
+    z-index: 1;
+    content: url(images/illustration-box-desktop.svg);
+  }
   * body main {
     display: -ms-grid;
     display: grid;
@@ -442,7 +458,7 @@
   * body main .question {
     color: black;
     width: 95%;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
     text-align: left;
     font-weight: 400;
     border-bottom: 1px solid lightgray;
@@ -502,7 +518,7 @@
     overflow: hidden;
     margin-top: 0.5em;
     line-height: 2em;
-    font-size: 1.2vh;
+    font-size: 1.5vh;
     height: 0em;
     font-weight: 400;
     -webkit-animation-duration: 0.6s;
@@ -577,6 +593,16 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
     background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
   }
+  * body #box {
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 12vw;
+    left: 12vw;
+    top: 45vh;
+    z-index: 1;
+    content: url(images/illustration-box-desktop.svg);
+  }
   * body main {
     display: -ms-grid;
     display: grid;
@@ -659,7 +685,7 @@
   * body main .question {
     color: black;
     width: 95%;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
     text-align: left;
     font-weight: 400;
     border-bottom: 1px solid lightgray;
@@ -719,7 +745,7 @@
     overflow: hidden;
     margin-top: 0.5em;
     line-height: 2em;
-    font-size: 1.2vh;
+    font-size: 1.5vh;
     height: 0em;
     font-weight: 400;
     -webkit-animation-duration: 0.6s;

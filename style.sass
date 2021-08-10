@@ -35,6 +35,8 @@ $f-family: 'Kumbh Sans', sans-serif
             place-items: center
             background: linear-gradient(180deg, $s-vio, $s-blue) no-repeat
 
+            #box
+                display: none
             main
                 display: grid
                 grid-template-rows: 4rem 4rem auto
@@ -144,6 +146,8 @@ $f-family: 'Kumbh Sans', sans-serif
             place-items: center
             background: linear-gradient(180deg, $s-vio, $s-blue) no-repeat
 
+            #box
+                display: none
             main
                 display: grid
                 grid-template-rows: 4rem 4rem auto
@@ -253,6 +257,16 @@ $f-family: 'Kumbh Sans', sans-serif
             place-items: center
             background: linear-gradient(180deg, $s-vio, $s-blue) no-repeat
 
+            #box
+                display: block
+                position: absolute
+                height: auto
+                width: 12vw
+                left: 10vw
+                top: 45vh
+                z-index: 1
+                content: url(images/illustration-box-desktop.svg)
+
             main
                 display: grid
                 overflow: hidden
@@ -308,7 +322,7 @@ $f-family: 'Kumbh Sans', sans-serif
                 .question
                     color: black
                     width: 95%
-                    font-size: 1.5vh
+                    font-size: 1.75vh
                     text-align: left
                     font-weight: $s-font
                     border-bottom: 1px solid lightgray
@@ -338,7 +352,7 @@ $f-family: 'Kumbh Sans', sans-serif
                         overflow: hidden
                         margin-top: 0.5em
                         line-height: 2em
-                        font-size: 1.2vh
+                        font-size: 1.5vh
                         height: 0em
                         font-weight: $s-font
                         animation-duration: 0.6s
@@ -383,6 +397,16 @@ $f-family: 'Kumbh Sans', sans-serif
             place-items: center
             background: linear-gradient(180deg, $s-vio, $s-blue) no-repeat
 
+            #box
+                display: block
+                position: absolute
+                height: auto
+                width: 12vw
+                left: 12vw
+                top: 45vh
+                z-index: 1
+                content: url(images/illustration-box-desktop.svg)
+
             main
                 display: grid
                 overflow: hidden
@@ -438,7 +462,7 @@ $f-family: 'Kumbh Sans', sans-serif
                 .question
                     color: black
                     width: 95%
-                    font-size: 1.5vh
+                    font-size: 1.75vh
                     text-align: left
                     font-weight: $s-font
                     border-bottom: 1px solid lightgray
@@ -468,7 +492,7 @@ $f-family: 'Kumbh Sans', sans-serif
                         overflow: hidden
                         margin-top: 0.5em
                         line-height: 2em
-                        font-size: 1.2vh
+                        font-size: 1.5vh
                         height: 0em
                         font-weight: $s-font
                         animation-duration: 0.6s
@@ -498,4 +522,3 @@ $f-family: 'Kumbh Sans', sans-serif
 
                 a
                     color: #F47B56
-    
