@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
 
+//colors grabbed from style-guide, didn't use themes
+
 //primary text
 $d-blue: hsl(238, 29%, 16%)
 $s-red: hsl(14, 88%, 65%)
@@ -150,6 +152,7 @@ $f-family: 'Kumbh Sans', sans-serif
                 display: none
             main
                 display: grid
+                //makes two svgs bigger than other items so it shows up well in mobile
                 grid-template-rows: 4rem 4rem auto
                 background: white
                 font-family: $f-family
@@ -161,6 +164,7 @@ $f-family: 'Kumbh Sans', sans-serif
                 padding: 5%
 
                 #woman
+                    //content property adds src to img
                     content: url("images/illustration-woman-online-mobile.svg")
                     position: relative
                     top: -7vh
@@ -188,8 +192,10 @@ $f-family: 'Kumbh Sans', sans-serif
 
                     svg
                         animation-duration: 1.5s
+                        //fill mode forward helps it stay after animation state
                         animation-fill-mode: forwards
 
+                        //makes arrows spin up or down
                         @keyframes arrDown
                             0%
                                 transform: rotateX(0deg)
@@ -269,7 +275,9 @@ $f-family: 'Kumbh Sans', sans-serif
 
             main
                 display: grid
+                //hides the svg inside the main from pertruding
                 overflow: hidden
+                //helps make two equal columns then 6 equal rows on the right
                 grid-template-columns: 1fr 1fr
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
                 grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive'
