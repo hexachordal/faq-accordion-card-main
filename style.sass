@@ -48,10 +48,12 @@ $f-family: 'Kumbh Sans', sans-serif
                 padding: 5%
 
                 #woman
+                    content: url("images/illustration-woman-online-mobile.svg")
                     position: relative
                     top: -7vh
                     right: 1rem
                 #bkg
+                    content: url("images/bg-pattern-mobile.svg")
                     position: relative
                     top: -8vh
 
@@ -155,10 +157,12 @@ $f-family: 'Kumbh Sans', sans-serif
                 padding: 5%
 
                 #woman
+                    content: url("images/illustration-woman-online-mobile.svg")
                     position: relative
                     top: -7vh
                     right: 1rem
                 #bkg
+                    content: url("images/bg-pattern-mobile.svg")
                     position: relative
                     top: -8vh
 
@@ -252,6 +256,7 @@ $f-family: 'Kumbh Sans', sans-serif
             main
                 display: grid
                 grid-template-columns: 1fr 1fr
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
                 grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive'
                 background: white
                 font-family: $f-family
@@ -263,13 +268,19 @@ $f-family: 'Kumbh Sans', sans-serif
                 padding: 5%
 
                 #woman
+                    content: url("images/illustration-woman-online-desktop.svg")
                     grid-area: woman
                     position: relative
+                    width: 100%
+                    height: auto
                     top: -7vh
                     right: 1rem
                 #bkg
+                    content: url("images/bg-pattern-desktop.svg")
                     grid-area: shadow
                     position: relative
+                    width: 100%
+                    height: auto
                     top: -8vh
 
                 header
@@ -280,6 +291,17 @@ $f-family: 'Kumbh Sans', sans-serif
                     font-weight: $b-font
                     font-size: 2em
                     text-align: center
+
+                #qOne
+                    grid-area: qOne
+                #qTwo
+                    grid-area: qTwo
+                #qThree
+                    grid-area: qThree
+                #qFour
+                    grid-area: qFour
+                #qFive
+                    grid-area: qFive
 
                 .question
                     color: black
@@ -375,11 +397,16 @@ $f-family: 'Kumbh Sans', sans-serif
                 #woman
                     grid-area: woman
                     position: relative
+                    width: 100%
+                    height: auto
                     top: -7vh
                     right: 1rem
                 #bkg
+                    content: url("images/bg-pattern-mobile.svg")
                     grid-area: shadow
                     position: relative
+                    width: 100%
+                    height: auto
                     top: -8vh
 
                 header

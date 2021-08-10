@@ -32,11 +32,13 @@
     padding: 5%;
   }
   * body main #woman {
+    content: url("images/illustration-woman-online-mobile.svg");
     position: relative;
     top: -7vh;
     right: 1rem;
   }
   * body main #bkg {
+    content: url("images/bg-pattern-mobile.svg");
     position: relative;
     top: -8vh;
   }
@@ -202,11 +204,13 @@
     padding: 5%;
   }
   * body main #woman {
+    content: url("images/illustration-woman-online-mobile.svg");
     position: relative;
     top: -7vh;
     right: 1rem;
   }
   * body main #bkg {
+    content: url("images/bg-pattern-mobile.svg");
     position: relative;
     top: -8vh;
   }
@@ -361,6 +365,8 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive';
     background: white;
     font-family: "Kumbh Sans", sans-serif;
@@ -373,20 +379,26 @@
     padding: 5%;
   }
   * body main #woman {
+    content: url("images/illustration-woman-online-desktop.svg");
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: woman;
     position: relative;
+    width: 100%;
+    height: auto;
     top: -7vh;
     right: 1rem;
   }
   * body main #bkg {
+    content: url("images/bg-pattern-desktop.svg");
     -ms-grid-row: 4;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: shadow;
     position: relative;
+    width: 100%;
+    height: auto;
     top: -8vh;
   }
   * body main header {
@@ -399,6 +411,31 @@
     font-weight: 700;
     font-size: 2em;
     text-align: center;
+  }
+  * body main #qOne {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: qOne;
+  }
+  * body main #qTwo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: qTwo;
+  }
+  * body main #qThree {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: qThree;
+  }
+  * body main #qFour {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: qFour;
+  }
+  * body main #qFive {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: qFive;
   }
   * body main .question {
     color: black;
@@ -560,15 +597,20 @@
     -ms-grid-column: 1;
     grid-area: woman;
     position: relative;
+    width: 100%;
+    height: auto;
     top: -7vh;
     right: 1rem;
   }
   * body main #bkg {
+    content: url("images/bg-pattern-mobile.svg");
     -ms-grid-row: 4;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: shadow;
     position: relative;
+    width: 100%;
+    height: auto;
     top: -8vh;
   }
   * body main header {
