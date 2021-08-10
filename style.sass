@@ -255,13 +255,14 @@ $f-family: 'Kumbh Sans', sans-serif
 
             main
                 display: grid
+                overflow: hidden
                 grid-template-columns: 1fr 1fr
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
                 grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive'
                 background: white
                 font-family: $f-family
                 place-items: center
-                width: 90vw
+                width: 70vw
                 height: 70vh
                 border-radius: 20px
                 box-shadow: 0px 5px 20px 0px black
@@ -273,15 +274,16 @@ $f-family: 'Kumbh Sans', sans-serif
                     position: relative
                     width: 100%
                     height: auto
-                    top: -7vh
-                    right: 1rem
+                    top: 11vh
+                    right: 6rem
                 #bkg
                     content: url("images/bg-pattern-desktop.svg")
                     grid-area: shadow
                     position: relative
                     width: 100%
                     height: auto
-                    top: -8vh
+                    top: -14vh
+                    right: 7em
 
                 header
                     position: relative
@@ -383,31 +385,35 @@ $f-family: 'Kumbh Sans', sans-serif
 
             main
                 display: grid
+                overflow: hidden
                 grid-template-columns: 1fr 1fr
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
                 grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive'
                 background: white
                 font-family: $f-family
                 place-items: center
-                width: 90vw
+                width: 70vw
                 height: 70vh
                 border-radius: 20px
                 box-shadow: 0px 5px 20px 0px black
                 padding: 5%
 
                 #woman
+                    content: url("images/illustration-woman-online-desktop.svg")
                     grid-area: woman
                     position: relative
                     width: 100%
                     height: auto
-                    top: -7vh
-                    right: 1rem
+                    top: 11vh
+                    right: 6rem
                 #bkg
-                    content: url("images/bg-pattern-mobile.svg")
+                    content: url("images/bg-pattern-desktop.svg")
                     grid-area: shadow
                     position: relative
                     width: 100%
                     height: auto
-                    top: -8vh
+                    top: -14vh
+                    right: 7em
 
                 header
                     position: relative

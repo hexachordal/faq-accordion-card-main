@@ -363,6 +363,7 @@
   * body main {
     display: -ms-grid;
     display: grid;
+    overflow: hidden;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -371,7 +372,7 @@
     background: white;
     font-family: "Kumbh Sans", sans-serif;
     place-items: center;
-    width: 90vw;
+    width: 70vw;
     height: 70vh;
     border-radius: 20px;
     -webkit-box-shadow: 0px 5px 20px 0px black;
@@ -387,8 +388,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: -7vh;
-    right: 1rem;
+    top: 11vh;
+    right: 6rem;
   }
   * body main #bkg {
     content: url("images/bg-pattern-desktop.svg");
@@ -399,7 +400,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: -8vh;
+    top: -14vh;
+    right: 7em;
   }
   * body main header {
     position: relative;
@@ -578,13 +580,16 @@
   * body main {
     display: -ms-grid;
     display: grid;
+    overflow: hidden;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 'woman FAQ' 'woman qOne' 'woman qTwo' 'shadow qThree' 'shadow qFour' 'shadow qFive';
     background: white;
     font-family: "Kumbh Sans", sans-serif;
     place-items: center;
-    width: 90vw;
+    width: 70vw;
     height: 70vh;
     border-radius: 20px;
     -webkit-box-shadow: 0px 5px 20px 0px black;
@@ -592,6 +597,7 @@
     padding: 5%;
   }
   * body main #woman {
+    content: url("images/illustration-woman-online-desktop.svg");
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
@@ -599,11 +605,11 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: -7vh;
-    right: 1rem;
+    top: 11vh;
+    right: 6rem;
   }
   * body main #bkg {
-    content: url("images/bg-pattern-mobile.svg");
+    content: url("images/bg-pattern-desktop.svg");
     -ms-grid-row: 4;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
@@ -611,7 +617,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: -8vh;
+    top: -14vh;
+    right: 7em;
   }
   * body main header {
     position: relative;
